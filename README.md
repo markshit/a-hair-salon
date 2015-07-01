@@ -6,7 +6,8 @@ A Hair Salon
 ### How to build
 ```
 npm install
-grunt
+grunt build
+grunt watch
 ```
 
 ### How to Publish
