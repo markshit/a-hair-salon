@@ -1,0 +1,90 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="x-ua-compatible", content="ie=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title A HAIR SALON
+    link(rel="apple-touch-icon", href="apple-touch-icon.png")
+    // Place favicon.ico in the root directory
+
+    link(rel="stylesheet", href="./css/normalize.css")
+    link(rel="stylesheet", href="./css/main.css")
+    link(rel="stylesheet", href="./css/a-hair-salon.css")
+    script(src="./js/modernizr-2.8.3.min.js")
+  body
+    // 100% landing page
+    .top-section
+      .v-center
+        .the-big-a A
+        .hair-salon HAIR SALON
+        .heads.row
+          each val, index in {1: "FREE", 2: "HAIR", 3: "CUT"}
+            .heads-icon
+              img(src="./images/heads/" + index + ".png")
+              span= val
+    #a-hair-salon-is-just-in-campus
+      .title A HAIR SALON IS JUST IN CAMPUS
+      .address-section
+      // map
+      .address-img
+        img(src="./images/map.svg")
+      // address
+      .address-text
+        .address
+          del ADDRESS
+          address 43TH NERVERLAND AVE
+          address 123 SEATTLE
+          address 123232
+        .email
+          del EMAIL:
+          a#email SUFNV0VOVE9OR0BIT1RNQUlMLkNPTQ==
+    // service and price
+    #service-and-price
+      .title SERVICE AND PRICE?
+      .rotate-tag
+        span.price-tag FREE
+      p.free-cut.
+        I am a master student in UW. Hair cutting is my hobby, I hold a certificate on hair styling.
+        I do not consider hair cutting as a job, so it is totally free if you come to style your hair.
+    #what-i-had-done-before
+      .title WHAT I HAD DONE BEFORE
+      .showcase
+        .row.show-arrow
+          each val, index in {1: "M", 2: "A", 3: "X"}
+            .showbox
+              .front
+                img(src="./images/style/" + index + ".png")
+              .back= val
+        // row 1 end
+        .row.show-arrow
+          each val, index in {4: "WILL YOU", 5: "BE", 6: "MY"}
+            .showbox
+              .front
+                img(src="./images/style/" + index + ".png")
+              .back= val
+        // row 2 end
+        .row.show-arrow
+          each val, index in {7: "", 8: "GIRLFRIEND", 9: ""}
+            .showbox
+              .front
+                img(src="./images/style/" + index + ".png")
+              if index == 8
+                .back
+                  span#gf= val
+              else
+                .back= val
+        // row 3 end
+        .row.show-arrow
+          //- 梦想还是要有的, 万一实现了呢
+          //- each val, index in {10: "AND", 11: "SHE SAIED", 12: "YES"}
+          each val, index in {10: "", 11: "", 12: ""}
+            .showbox
+              .front
+                img(src="./images/style/" + index + ".png")
+              .back= val
+        // row 4 end
+
+  script(src="./js/jquery-1.11.2.min.js")
+  script(src="./js/jquery.flip.min.js")
+  script(src="./js/a-hair-salon.js")
