@@ -20,7 +20,7 @@ html(lang="en")
     // 100% landing page
     .top-section
       .v-center
-        .the-big-a 
+        .the-big-a
           img(src="./images/style/logo.png")
         .hair-salon HAIR SALON
         .heads.row
@@ -28,7 +28,7 @@ html(lang="en")
             .heads-icon
               img(src="./images/heads/" + index + ".png")
               span= val
-          #slider    
+          #slider
     #a-hair-salon-is-just-in-campus
       .title 
         .square
@@ -44,7 +44,7 @@ html(lang="en")
           br
           br
           address 3927 ADAMS LANE NE
-          address MERCER COURT D-308-E 
+          address MERCER COURT D-308-E
           address SEATTLE WA 98105
           br
           br
@@ -64,29 +64,9 @@ html(lang="en")
     #what-i-had-done-before
       .title WHAT I HAD DONE BEFORE
       .showcase
-        .row.show-arrow
-          each val, index in {1: "", 2: "", 3: ""}
-            .showbox
-              .front
-                img(src="./images/style/" + index + ".png")
-        // row 1 end
-        .row.show-arrow
-          each val, index in {4: "", 5: "", 6: ""}
-            .showbox
-              .front
-                img(src="./images/style/" + index + ".png")
-        // row 2 end
-        .row.show-arrow
-          each val, index in {7: "", 8: "", 9: ""}
-            .showbox
-              .front
-                img(src="./images/style/" + index + ".png")
-        // row 3 end
-        .row.show-arrow
-          each val, index in {10: "", 11: "", 12: ""}
-            .showbox
-              .front
-                img(src="./images/style/" + index + ".png")
-        // row 4 end
-
-
+        each row in [0, 1, 2, 3]
+          .row.show-arrow
+            each col in [1, 2, 3]
+              .showbox
+                .front
+                  img(src="./images/style/" + (row * 3 + col) + ".png")
