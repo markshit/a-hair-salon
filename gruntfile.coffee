@@ -14,14 +14,6 @@ module.exports = (grunt) ->
           dest: 'dist/css',
           ext: '.css'
         }]
-    coffee:
-      compile:
-        expand: true
-        flatten: false
-        cwd: 'src/coffee'
-        src: ['*.coffee']
-        dest: 'dist/js'
-        ext: '.js'
     jade:
       dist:
         options:
@@ -49,10 +41,9 @@ module.exports = (grunt) ->
           dest: 'dist'
         ]
     watch:
-      files: ['src/*.jade', 'src/sass/*.sass', 'src/coffee/*.coffee'],
+      files: ['src/*.jade', 'src/sass/*.sass'],
       tasks: ['build']
 
-  grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-copy'
   grunt.loadNpmTasks 'grunt-contrib-jade'
   grunt.loadNpmTasks 'grunt-contrib-sass'
@@ -60,5 +51,5 @@ module.exports = (grunt) ->
 
   grunt.loadNpmTasks 'grunt-gh-pages'
 
-  grunt.registerTask 'build',  ['jade', 'sass', 'coffee', 'copy']
+  grunt.registerTask 'build',  ['jade', 'sass', 'copy']
   grunt.registerTask 'default',  ['watch']
