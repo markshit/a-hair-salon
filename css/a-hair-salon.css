@@ -1,12 +1,13 @@
 html {
   height: 100%;
   font-size: 0.95rem;
-  letter-spacing: 0.45rem;
+  letter-spacing: 7px;
   font-weight: lighter; }
 
 body {
   text-align: center;
-  height: 100%; }
+  height: 100%;
+  font-family: helvetica; }
 
 .top-section {
   height: 100%; }
@@ -55,46 +56,46 @@ body {
   margin-bottom: 1rem; }
 
 .free-cut {
-  width: 42rem;
+  width: 600px;
   text-align: justify;
   margin-left: auto;
   margin-right: auto;
-  font-weight: 500; }
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 5px; }
 
 .title {
-  font-weight: 500;
+  font-weight: 300;
+  font-size: 14px;
   margin-top: 5rem;
   margin-bottom: 3rem; }
-  .title:before {
-    content: "";
-    width: 0.7rem;
-    height: 0.7rem;
-    background-color: #f7e53b;
-    transform: rotate(-45deg);
-    display: inline-block;
-    position: relative;
-    margin-right: 0.5rem; }
 
-.the-big-a {
-  font-family: monospace;
-  font-size: 5rem; }
+.the-big-a img {
+  width: 100px;
+  height: 90px; }
 
 .hair-salon {
-  font-weight: 500; }
+  font-weight: 300;
+  font-size: 14px; }
 
 .address-img {
   display: inline-block; }
   .address-img img {
-    width: 20rem;
-    padding-right: 2rem; }
+    width: 320px;
+    height: 320px;
+    margin-right: 60px; }
 
 .address-text {
-  text-align: left;
-  display: inline-block;
   position: relative;
-  top: 2rem; }
+  top: 40px;
+  font-size: 12px;
+  text-align: left;
+  display: inline-block; }
   .address-text address {
     font-style: normal; }
+
+.address-title {
+  padding-bottom: 30px; }
 
 .address-section {
   margin-bottom: -1rem; }
@@ -113,16 +114,9 @@ body {
     width: 100%;
     height: 100%; }
 
-#gf {
-  color: #f7e53b;
-  background: black;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-left: -1.5rem; }
-
 .row {
   position: relative;
-  width: 37rem;
+  width: 600px;
   margin-left: auto;
   margin-right: auto; }
 
@@ -160,9 +154,11 @@ body {
     margin-right: 1rem; }
   .heads.row span {
     display: block;
-    font-size: 0.8rem; }
+    font-size: 14px;
+    font-weight: 300; }
   .heads.row img {
-    width: 5rem;
-    padding-bottom: 1rem; }
+    width: 150px;
+    height: 140px;
+    padding-bottom: 10px; }
 
 /*# sourceMappingURL=a-hair-salon.css.map */
